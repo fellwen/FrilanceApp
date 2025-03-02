@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../assets/fonts/ofont.ru_Arial-Narrow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+/* Общий контейнер для сообщений */
+.messages {
+    padding: 15px;
+    background-color: rgbrgb(69, 215, 229); /* Темный фон для области сообщений */
+    overflow-y: auto;
+    flex: 1;
+  }
+  
+  .message {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: flex-start;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 80%; 
+  }
+  
+  /* Стиль для сообщений от текущего пользователя */
+  .me {
+    background-color: #3a95c3; 
+    align-self: flex-end; 
+    border-radius: 12px 12px 0 12px;
+    color: #fff;
+  }
+  
+  /* Стиль для сообщений от других пользователей */
+  .user {
+    background-color: #3a3a3a; 
+    border-radius: 12px 12px 12px 0;
+    color: #e0e0e0;
+    margin-left: 10px;
+  }
+  
+  /* Имя пользователя, отображается перед сообщением
+  .user span {
+    font-weight: bold;
+    color: #bbb; 
+    margin-right: 10px;
+  } */
+  
+  /* Текст сообщения */
+  .text {
+    word-wrap: break-word; 
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #e0e0e0;
+  }
+  
